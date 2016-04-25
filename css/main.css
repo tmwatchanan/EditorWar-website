@@ -38,7 +38,7 @@ body {
 }
 
 #header-emacs {
-	background-image: url(../images/banner-emacs.png);
+	background-image: url(../images/banner/banner-emacs.png);
 	background-repeat:no-repeat;
     height:220px;
     position:relative;
@@ -47,7 +47,7 @@ body {
 }
 
 #header-vim {
-	background-image: url(../images/banner-vim.png);
+	background-image: url(../images/banner/banner-vim.png);
 	background-repeat:no-repeat;
     height:220px;
     position:relative;
