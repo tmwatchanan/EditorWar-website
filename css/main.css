@@ -10,19 +10,19 @@ body {
 #wrapper {
 	position: relative;
 	text-align: left;
-	width: 780px;
+	width: 978px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url(../images/shadow-bg.jpg);
-	background-repeat:repeat-y;
+	background-color: white;
+/* 	background-image: url(../images/shadow-bg.jpg);
+	background-repeat:repeat-y; */
 }
 
 #main {
 	padding: 0 20px 20px 20px;
-	background-image: url(../images/shadow-bottom.jpg);
+	/* background-image: url(../images/shadow-bottom.jpg);
 	background-repeat:no-repeat;
-	background-position: bottom left;
-	
+	background-position: bottom left; */
 }
 
 #header {
