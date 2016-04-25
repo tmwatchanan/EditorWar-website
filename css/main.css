@@ -26,9 +26,9 @@ body {
 }
 
 #header {
-	background-image: url(../images/recipe-header.jpg);
+	background-image: url(../images/banner/banner-main.png);
 	background-repeat:no-repeat;
-    height:150px;
+    height:220px;
     position:relative;
     border-bottom: 1px solid #ececec;
 }
