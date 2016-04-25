@@ -11,20 +11,20 @@ body {
 	width: 780px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url(shadow-bg.jpg);
+	background-image: url(../images/shadow-bg.jpg);
 	background-repeat:repeat-y;
 }
 
 #main {
 	padding: 0 20px 20px 20px;
-	background-image: url(shadow-bottom.jpg);
+	background-image: url(../images/shadow-bottom.jpg);
 	background-repeat:no-repeat;
 	background-position: bottom left;
 	
 }
 
 #header {
-	background-image: url(recipe-header.jpg);
+	background-image: url(../images/recipe-header.jpg);
 	background-repeat:no-repeat;
     height:150px;
     position:relative;
