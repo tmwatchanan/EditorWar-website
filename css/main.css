@@ -4,6 +4,8 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	background-color: #FFFFFF;
 	text-align: center;
+	background-image: url(../images/bg/grey-linen.png);
+	background-repeat: repeat;
 }
 #wrapper {
 	position: relative;
