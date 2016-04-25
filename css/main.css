@@ -37,6 +37,48 @@ body {
 	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+#header-emacs {
+	background-image: url(../images/banner-emacs.png);
+	background-repeat:no-repeat;
+    height:220px;
+    position:relative;
+    border-bottom: 1px solid #ececec;
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#header-vim {
+	background-image: url(../images/banner-vim.png);
+	background-repeat:no-repeat;
+    height:220px;
+    position:relative;
+    border-bottom: 1px solid #ececec;
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#header-emacs h1 {
+	margin: 0;
+    padding: 0;
+	font-family: Bangers;
+    font-weight:normal;
+    color: #8077FF;
+    font-size: 280%;
+    position:absolute;
+    bottom: 4px;
+    right: 10px;
+}
+
+#header-vim h1 {
+	margin: 0;
+    padding: 0;
+	font-family: Bangers;
+    font-weight:normal;
+    color: #009F1B;
+    font-size: 280%;
+    position:absolute;
+    bottom: 4px;
+    right: 10px;
+}
+
 #header h1 {
 	margin: 0;
     padding: 0;
