@@ -22,6 +22,7 @@ body {
 	padding: 0 0 2px 0;
 	margin-top: 10px;
 	margin-bottom: 30px;
+	box-shadow: 0 10px 16px 0 rgba(255,255,255,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	/* background-image: url(../images/shadow-bottom.jpg);
 	background-repeat:no-repeat;
 	background-position: bottom left; */
@@ -33,14 +34,16 @@ body {
     height:220px;
     position:relative;
     border-bottom: 1px solid #ececec;
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #header h1 {
 	margin: 0;
     padding: 0;
     font-weight:normal;
-    color: #cb352d;
+	font-family: Bangers;
     font-size: 190%;
+    color: #cb352d;
     position:absolute;
     bottom: 4px;
     right: 10px;
@@ -74,4 +77,20 @@ body {
     text-align:right;
     color: #999;
     background-color: transparent;
+}
+
+hr.part-up {
+	height: 10px;
+	width: 100%;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	margin-bottom: 50px;
+}
+
+hr.part-down {
+	height: 10px;
+	width: 100%;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	margin-top: 50px;
 }
