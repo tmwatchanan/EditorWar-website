@@ -1,0 +1,57 @@
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #aabcfe;
+}
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #aabcfe;
+    color: #669;
+    background-color: #e8edff;
+}
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #aabcfe;
+    color: #039;
+    background-color: #b9c9fe;
+}
+.tg .tg-sc15 {
+    font-family: Tahoma, Geneva, sans-serif !important;
+    background-color: #34cdf9
+}
+.tg .tg-rgvv {
+    font-family: Tahoma, Geneva, sans-serif !important;
+    background-color: #34ff34;
+    color: #036400
+}
+.tg .tg-5rrb {
+    font-family: Tahoma, Geneva, sans-serif !important;
+    background-color: #fd6864;
+    color: #680100
+}
+.tg .tg-gmhj {
+    font-family: Tahoma, Geneva, sans-serif !important;
+}
+.tg .tg-oa6q {
+    font-family: Tahoma, Geneva, sans-serif !important;
+    background-color: #d0fdc1;
+    color: #32cb00
+}
+.tg .tg-75rn {
+    font-family: Tahoma, Geneva, sans-serif !important;
+    background-color: #fdc3c1;
+    color: #cb0000
+}
