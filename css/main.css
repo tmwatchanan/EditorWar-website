@@ -98,6 +98,10 @@ body {
 	margin: 0 20px 0 20px;
 }
 
+#content-center img {
+	margin: auto;
+}
+
 #content {
 	position: static;
 	float:left;
