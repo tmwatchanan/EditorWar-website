@@ -1,0 +1,67 @@
+#infovim {
+	position: static;
+	float:left; /* right */
+    width: auto; /* 520 */
+	/* padding: 0 50px 0 50px; */
+	margin: 0 20px 0 20px;
+	/* border: 3px solid #73AD21; */
+	
+}
+#infovim h1{
+	font-weight:bold;
+    color: #088A08;
+    font-size: 190%;
+}
+#infovim h2{
+	font-weight:normal;
+    color: #04B404;
+    font-size: 130%;
+}
+#infovim p{
+	font-size: 90%;
+	line-height: 1.8em;
+	color: #585858;	
+	text-indent: 3em;
+}
+
+#infovim  img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 629px;
+    height: 387px;
+}
+
+#infoemacs {
+	position: static;
+	float:left; /* right */
+    width: auto; /* 520 */
+	/* padding: 0 50px 0 50px; */
+	margin: 0 20px 0 20px;
+	/* border: 3px solid #73AD21; */
+	
+}
+#infoemacs h1{
+	font-weight:bold;
+    color: #0404B4;
+    font-size: 190%;
+}
+#infoemacs h2{
+	font-weight:normal;
+    color: #0101DF;
+    font-size: 130%;
+}
+#infoemacs p{
+	font-size: 90%;
+	line-height: 1.8em;
+	color: #585858;	
+	text-indent: 3em;
+}
+
+#infoemacs  img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 629px;
+    height: 387px;
+}

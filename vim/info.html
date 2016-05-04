@@ -4,8 +4,10 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link href="../css/main.css" rel="stylesheet" type="text/css" />
 <link href="../css/dropdown.css" rel="stylesheet" type="text/css" />
+<link href="../css/info.css" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+<script src="../js/lite-modal.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -41,7 +43,27 @@
 	</div>
 	<hr class="part-up" />
 	<div id="content">
-	
+		<div id="infovim">
+			<h1>Vim คืออะไร</h1>  
+			<img src="../images/vim.png" width="629" height="387" onclick="liteModal.open('#vim');" />
+			<div class="lite-modal" id="vim">
+			  <h1>Vim</h1>
+			  <img src="../images/vim.png" />
+			</div>
+			<p>Vim เป็น editor ที่ใช้สำหรับแก้ไขไฟล์หรือซอร์สโค้ดโปรแกรม ต้นกำเนิดจริง ๆ ของ vim มาจาก vi แต่ถูกปรับแต่งมาเรื่อย ๆ จนในปัจจุบันมีความสามารถมากขึ้นและเป็นประโยชน์ โดย vim สามารถทำงานได้บนระบบปฏิบัติการหลายระบบโดยเฉพาะ Unix และ Linux ซึ่งจะมี vi(m) ติดตั้งมาอยู่แล้วพร้อมใช้งาน</p>
+			<h2>หลักการทำงานของ vim</h2>
+			<p>การทำงานของ vim นั้นค่อนข้างจะแตกต่างจาก editor ทั่วไปอย่างเห็นได้ชัด สำหรับ editor ปกติจะมีโหมดการใช้งานเพียงโหมดเดียวคือการพิมพ์คือการเขียนอักขระลงไปบนไฟล์ทันที แต่สำหรับ vim นั้นใช้ระบบที่เรียกว่าโหมดการทำงานที่แตกต่างกัน ยกตัวอย่างเช่น โหมด normal, โหมด visual, โหมด insert, โหมด command-line เป็นต้น</p>
+			<h2>Vim สามารถถูกปรับแต่งให้เป็นไปตามที่คุณต้องการได้</h2>
+			<p>Vim สามารถถูกปรับแต่ง (configuration) ได้ค่อนข้างอิสระ ตั้งแต่การเพิ่มเลขบรรทัดไปจนถึงการติดตั้งปลั๊กอินเสริมที่มีคนพัฒนาและแจกจ่ายให้ ทำให้เราสามารถออกแบบ vim ให้เป็นเครื่องมือในการทำแก้ไขข้อความให้ตรงตามความต้องการมากที่สุด ดูไปดูมาก็เหมือน IDE ราคาแพงตัวหนึ่งเลยทีเดียว</p>
+			<h2>แปลงร่าง vi(m) ให้น่าใช้งาน</h2>
+			<img src="../images/gvim.png" width="629" height="387" onclick="liteModal.open('#gvim');" />
+			<div class="lite-modal" id="gvim">
+			  <h1>Graphical Vim</h1>
+			  <img src="../images/gvim.png" width="840" height="483" />
+			</div>
+			<h2>ด้วยการปรับแต่งหน้าตาของ GVim</h2>
+			<p >GVim หรือ Graphical Vim ถูกพัฒนามาจาก vim เพื่อให้สามารถปรับแต่งใส่ plugins ต่าง ๆ ได้และถูกออกแบบให้มี graphic user interface (GUI mode) เป็นผลให้คุณสามารถปรับแต่งให้ vim ของคุณนั้นมีความสวยงามและทำงานตอบสนองคุณได้ดีเหมือน IDE แพง ๆ ตัวหนึ่ง</p>
+		</div>
 	</div>
 	<hr class="part-down" />
 	<div id="footer">Copyright &copy; 2016 CPE 23 | CMU</div>
