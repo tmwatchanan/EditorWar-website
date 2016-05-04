@@ -1,0 +1,21 @@
+#content h2 {
+	margin: 0;
+    padding: 0;
+    font-weight:normal;
+    color: #0000A0;
+    font-size: 130%;
+	position:relative;
+    left : 2px;
+	top : 10px;
+}
+
+#content h3 {
+	margin: 0;
+    padding: 0;
+    font-weight:normal;
+    color: #CD7F32;
+    font-size: 110%;
+	position:relative;
+    left : 2px;
+	top : 10px;
+}
