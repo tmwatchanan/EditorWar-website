@@ -7,12 +7,26 @@
 <link href="./css/dropdown.css" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+<script src="./js/page-timer.js"></script>
+
+<script src="./js/jquery-1.12.3.min.js"></script>
+
+<script src="./js/typed.min.js" type="text/javascript"></script>
+<link href="./css/blinking-cursor.css" rel="stylesheet" type="text/css" />
+<script src="./js/animated-typing.js" type="text/javascript"></script>
+
+<link href="./css/matrix.css" rel="stylesheet" type="text/css" />
+<script src="./js/matrix.js" type="text/javascript"></script>
+
 </head>
-<body>
+
+<body onload="pageTimer();">
 <div id="wrapper">
 	<div id="main">
 	<div id="header">
-		<h1>Editor War | Emacs vs Vim</h1>
+		<div id="matrix">*~ VIM IS WINNER | --------- Vim [EDITOR WAR] Emacs --------- | EMACS IS NOOB ~*</div>
+		<!-- <h1>Editor War | Emacs vs Vim</h1> -->
+		<h1><span id="typed" style="background-color: black;"></span></h1>
 	</div>
 	<div class="menu-wrap">
 		<nav class="menu">
@@ -42,12 +56,12 @@
 	</div>
 	<hr class="part-up" />
 	<div id="content">
-		
+		<span id="typed"></span>
 		<p>Hello Editor War.</p>
 		
 	</div>
 	<hr class="part-down" />
-	<div id="footer">Copyright &copy; 2016 CPE 23 | CMU</div>
+	<div id="footer">Copyright &copy; 2016 CPE 23 | CMU <div id="timer"></div></div>
 	</div>
 	
 </div>
