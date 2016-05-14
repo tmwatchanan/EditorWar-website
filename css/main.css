@@ -96,6 +96,7 @@ body {
 	float:center;
     width: auto;
 	margin: 0 20px 0 20px;
+	text-align: center;
 }
 
 #content-center img {
