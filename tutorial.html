@@ -14,6 +14,7 @@
 <script src="./js/typed.min.js" type="text/javascript"></script>
 <link href="./css/blinking-cursor.css" rel="stylesheet" type="text/css" />
 <script src="./js/animated-typing.js" type="text/javascript"></script>
+
 </head>
 <body onload="pageTimer();">
 <div id="wrapper">
@@ -47,298 +48,172 @@
 			</ul>
 		</nav>
 	</div>
-	<hr class="part-up" />
-	<div id="content">
+	<hr class="part-up"/>
 
-		<font color="Blue">ข้อเปรียบเทียบในด้านต่าง ๆ ของ  Emacs กับ Vim</font>
+  <div id="content">
 
-	<table class="tg">
-		<tr>
-			<th class="tg-5rrb">Topics</th>	<th class="tg-rgvv">Emacs</th>	<th class="tg-sc15">Vim</th>
-		</tr>
-		<tr>
-			<td class="tg-75rn">ความเร็วในการเปิดโปรแกรม<br>(สมัยนี้แทบไม่รู้สึกแล้ว)</td>	<td class="tg-oa6q">ช้ากว่า</td>	<td class="tg-gmhj">เร็วกว่า</td>
-		</tr>
-		<tr>
-			<td class="tg-75rn">การเรียนรู้สำหรับผู้เริ่มต้น</td>	<td class="tg-oa6q">ง่ายกว่า</td>	<td class="tg-gmhj">ยากกว่า</td>
-		</tr>
-		<tr>
-			<td class="tg-75rn">ความเป็น Editor</td>	<td class="tg-oa6q">เป็นมากกว่า editor<br>จนเกือบจะเป็น OS ตัวหนึ่ง</td>	<td class="tg-gmhj">Editor มากความสามารถ</td>
-		</tr>
-		<tr>
-			<td class="tg-75rn">Editor มากความสามารถ</td>	<td class="tg-oa6q">เยอะกว่า(มาก)</td>	<td class="tg-gmhj">ไม่เยอะเท่า</td>
-		</tr>
-		<tr>
-			<td class="tg-75rn">การใช้ RAM ระหว่างการทำงาน<br>ของโปรแกรม</td>	<td class="tg-oa6q">เยอะกว่า</td>	<td class="tg-gmhj">เยอะกว่า</td>
-		</tr>
-		<tr>
-			<td class="tg-75rn">การใช้คำสั่งต่างๆ</td>	<td class="tg-oa6q">มักใช้ร่วมกับปุ่ม Ctrl & Meta</td>	<td class="tg-gmhj">ใช้ทุกปุ่ม</td>
-		</tr>
-	</table>
+	<ul><ul><div id="box-grey">ข้อเปรียบเทียบในด้านต่าง ๆ ของ  Emacs กับ Vim</div></ul></ul>
+		<ul><ul><ul><ul><table class="tg">
+		<br><tr><th bgcolor=#CFCFCF>Topics</th>	<th bgcolor=#63B8FF>Emacs</th>	<th bgcolor=#9ACD32>Vim</th></tr>
+			<tr><td>ความเร็วในการเปิดโปรแกรม<br>(สมัยนี้แทบไม่รู้สึกแล้ว)</td>	<td>ช้ากว่า</td>	<td>เร็วกว่า</td></tr>
+			<tr><td>การเรียนรู้สำหรับผู้เริ่มต้น</td>	<td>ง่ายกว่า</td>	<td>ยากกว่า</td></tr>
+			<tr><td>ความเป็น Editor</td>	<td>เป็นมากกว่า editor<br>จนเกือบจะเป็น OS ตัวหนึ่ง</td>	<td>Editor มากความสามารถ</td></tr>
+			<tr><td>จำนวนคำสั่ง</td>	<td>เยอะกว่า(มาก)</td>	<td>ไม่เยอะเท่า</td></tr>
+			<tr><td>การใช้ RAM ระหว่างการทำงาน<br>ของโปรแกรม</td>	<td>เยอะกว่า</td>	<td>เยอะกว่า</td></tr>
+			<tr><td>การใช้คำสั่งต่างๆ</td>	<td>มักใช้ร่วมกับปุ่ม Ctrl & Meta</td>	<td>ใช้ทุกปุ่ม</td></tr>
+		</table></table></ul></ul></ul></ul>
 
-	<br><font color="Blue">สิ่งที่ทั้งสองมีเหมือนกัน</font>
-		<ul><li><p>มีในทุกระบบของ Unix</p></li></ul>
-		<ul><li><p>การสนับสนุนภาษาโปรแกรมต่างๆ</p></li></ul>
-		<ul><li><p>คุณสามารถแก้ไขข้อความ (text editing) ได้โดยไม่ต้องละมือจากคีย์บอร์ดของคุณ<br>เนื่องจากทั้งสองโปรแกรมนั้นมีคีย์ลัดรองรับในการทำงานมากมาย</p></li></ul>
-	<br><font color="Blue">การใช้งานที่ทั้งสอง editor ทำได้เหมือนกัน</font>
-<table class="tg">
-	<tr>
-		<td class="tg-gmhj">
-			มาเรียนรู้ความหมายของปุ่มใน emacs กันก่อน!<br>
-			<p>Modifier keys เป็นปุ่มที่จะต้องใช้ร่วมกับปุ่มอีก ได้แก่ Alt, Ctrl และ Shift รวมไปถึง<br>
-				Meta, Super และ Hyper ในการใช้ emacs ปุ่มที่เราจะสนใจหลัก ๆ คือ Ctrl และ Meta<br>
-				ในการใช้ปุ่ม Ctrl จำเป็นจะต้องกดค้างไว้ (holding) และกดปุ่มอื่นที่ต้องการ<br>
-				แต่ในการใช้ปุ่ม Meta นั้น ไม่จำเป็นที่จะต้องกดปุ่ม Meta ค้างไว้ สามารถละมือไปกดปุ่มอื่นได้เลย<br>
-				(ปุ่ม Meta ในที่นี่จะหมายถึง ESC หรือ Alt)</p>
-			<ul><li><p>C หมายถึง ปุ่ม Ctrl</p></li></ul>
-			<ul><li><p>M หมายถึง Meta key ซึ่งหมายถึง Alt หรือ ESC</p></li></ul>
-		</td>
-	</tr>
-</table>
-<br>
-<table class="tg">
-	<tr>
-		<td class="tg-oa6q">
-			สำหรับผู้ใช้ Mac<br>
-			<p>ใน Mac ซึ่งไม่มีปุ่ม Alt ให้ใช้งานจึงต้องใช้งานปุ่ม ESC แต่หากต้องการใช้ปุ่ม option แทน<br>ก็สามารถทำได้ โดยเข้าไปตั้งค่าตามนี้</p>
-			<ul><p>Terminal > Preferences > Settings > *Whatever profile you use* > Keyboard</p></ul>
-			<p>และติ้กในช่อง</p>
-			<ul><li><p>"Use option as meta key"</p></li></ul>
-		</td>
-	</tr>
-</table>
-<table>
-<br>
-<table class="tg">
-	<tr>
-		<td class="tg-75rn">
-			Modesการใช้งาน ของ vim
-			<p>Modes ใน vim เป็นการแบ่งการทำงานผ่าน keyboard เป็นหลาย ๆ โหมดด้วยกัน<br>โดยแบ่งออกเป็นโหมดต่าง ๆ ดังนี้
-				(ในที่นี่ขอไม่กล่าวถึงอีก 3 โหมดได้แก่ select, command-line และ ex-mode)</p>
-			<ul><p>1. Normal</p>
-				<ul><p>1.1 การที่เข้าโหมด normal ให้กดปุุ่ม ESC</p>
-					<p>1.2 ใช้ในการนำทางและการจัดการข้อความ (text)</p>
-					<p>1.3 การกดตัวอักษรบนแป้มพิมพ์จะเป็นการใช้คีย์ลัดในการทำงาน</p></ul></ul>
-			<ul><p>2. Insert</p>
-				<ul><p>2.1 กด i เพื่อเข้าสู่โหมด insert</p>
-					<p>2.2 การกดตัวอักษรบนแป้มพิมพ์จะเป็นการเพิ่มตัวอักษรตัวนั้นลงไปในไฟล์</p>
-					<p>2.3 การจะใช้คีย์ลัดไม่สามารถใช้ได้ตรง ๆ จะต้องใช้ Ctrl หรือ Alt เป็นต้น</p>
-					<p>2.4 โดยปกติ emacs และ text editor อื่น ๆ จะอยู่ในโหมด insert เป็นหลัก</p></ul></ul>
-			<ul><p>3. Visual</p>
-				<ul><p>3.1 กด v เพื่อเข้าสู่โหมด visual</p>
-					<p>3.2 ใช้ในการเลือกขอบเขตของ text ที่เราต้องการ (ภาษาตลาดเรียกว่า คลุมดำ)</p>
-					<p>3.3 หลังจากเลือก (selection) ได้ตามที่ต้องการแล้วใช้คีย์ลัดได้แบบใน normal mode โดยไม่ต้องกด ESC</p></ul></ul>
-			<ul><li><p>โดยเริ่มต้นแล้ว vim จะเข้าอยู่ใน normal mode ให้</p></li></ul>
-	</tr>
-</table>
+	<ul><ul><br><div id="box-grey">สิ่งที่ทั้งสองมีเหมือนกัน</div></ul></ul>
+		<br><ul><ul><ul><ul><ul><li>มีในทุกระบบของ Unix</li><br>
+		        						<li>การสนับสนุนภาษาโปรแกรมต่างๆ</li><br>
+		        						<li>คุณสามารถแก้ไขข้อความ (text editing) ได้โดยไม่ต้องละมือจากคีย์บอร์ดของคุณ<br>เนื่องจากทั้งสองโปรแกรมนั้นมีคีย์ลัดรองรับในการทำงานมากมาย</li></ul></ul></ul></ul></ul>
 
-	<br><font color="red">Emacs & Vim Cheat Table</font>
-<table class="tg">
-	<tr>
-		<td class="tg-gmhj">
-			<p>หมายเหตุ: ผู้ใช้งาน Vim จะต้องอยู่ใน normal mode*</p>
-		</td>
-	</tr>
-</table>
-<br>Basic Movement
-<table class="tg">
-	<tr>
-		<th class="tg-5rrb"></th>	<th class="tg-rgvv">Emacs</th>	<th class="tg-sc15">Vim</th>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เลื่อนซ้าย</td>	<td class="tg-oa6q">C-b</td>	<td class="tg-gmhj">h</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เลื่อนขวา</td> <td class="tg-oa6q">C-f</td>	<td class="tg-gmhj">l</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เลื่อนบน</td>	<td class="tg-oa6q">C-p</td>	<td class="tg-gmhj">k</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เลื่อนล่าง</td>	<td class="tg-oa6q">C-n</td>	<td class="tg-gmhj">j</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เลื่อนขวา 1 คำ</td>	<td class="tg-oa6q">M-f</td>	<td class="tg-gmhj">w</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เลื่อนซ้าย 1 คำ</td>	<td class="tg-oa6q">M-b</td>	<td class="tg-gmhj">b</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ไปที่อักษรตัวแรกของคำถัดไป</td>	<td class="tg-oa6q">M-f or M-right</td>	<td class="tg-gmhj">w</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ไปที่อักษรตัวสุดท้ายของคำถัดไป</td>	<td class="tg-oa6q"></td>	<td class="tg-gmhj">e</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ไปที่อักษรตัวตัวแรกของคำก่อนหน้า</td>	<td class="tg-oa6q">M-b or M-left</td>	<td class="tg-gmhj">b</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ไปที่อักษรตัวตัวแรกของคำก่อนหน้า</td>	<td class="tg-oa6q">C-a</td>	<td class="tg-gmhj">^</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ไปที่อักษรตัวสุดท้ายของแถว</td>	<td class="tg-oa6q">C-e</td>	<td class="tg-gmhj">$</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ไปที่อักษรตัวแรกของไฟล์</td>	<td class="tg-oa6q">M-<</td>	<td class="tg-gmhj">gg</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ไปที่อักษรตัวแรกของไฟล์</td>	<td class="tg-oa6q">M-></td>	<td class="tg-gmhj">G</td>
-	</tr>
-</table>
-<br>Marking Text
-<table class="tg">
-	<tr>
-		<th class="tg-5rrb"></th>	<th class="tg-rgvv">Emacs</th>	<th class="tg-sc15">Vim</th>
-	</tr>
-	<tr>
-		<td class="tg-75rn">Mark ตัวอักษร (highlight)</td>	<td class="tg-oa6q">C-space bar (เริ่ม mark)</td>	<td class="tg-gmhj">v (เริ่ม mark)</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">Block mark</td>	<td class="tg-oa6q">-</td>	<td class="tg-gmhj">Ctrl - v</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">Line mark</td>	<td class="tg-oa6q">-</td>	<td class="tg-gmhj">Shift - v</td>
-	</tr>
-</table>
-<br>Editing Text
-<table class="tg">
-	<tr>
-		<th class="tg-5rrb"></th>	<th class="tg-rgvv">Emacs</th>	<th class="tg-sc15">Vim</th>
-	</tr>
-	<tr>
-		<td class="tg-75rn">คัดลอก</td>	<td class="tg-oa6q">M-w</td>	<td class="tg-gmhj">y</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">cut</td>	<td class="tg-oa6q">C-w</td>	<td class="tg-gmhj">d</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">วาง</td>	<td class="tg-oa6q">C-y</td>	<td class="tg-gmhj">p</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ลบทั้งแถว</td>	<td class="tg-oa6q">C-k</td>	<td class="tg-gmhj">dd</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ลบตัวอักษร (char)</td>	<td class="tg-oa6q">C-d</td>	<td class="tg-gmhj">x</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ลบคำ (word)</td>	<td class="tg-oa6q">M-d</td>	<td class="tg-gmhj">dw</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">Delete backwards</td>	<td class="tg-oa6q">M-del</td>	<td class="tg-gmhj">db</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">Undo</td>	<td class="tg-oa6q">C-x u or C-_ or C-/</td>	<td class="tg-gmhj">u</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เปลี่ยนตัวอักษรพิมพ์เล็กเป็นพิมพ์ใหญ่</td>	<td class="tg-oa6q">M-u (1 word)</td>	<td class="tg-gmhj">~ (1 ตัวอักษร)<br>Shift - v ~ (1 บรรทัด</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เปลี่ยนตัวอักษรพิมพ์ใหญ่เป็นพิมพ์เล็ก</td>	<td class="tg-oa6q">M-l (1 word)</td>	<td class="tg-gmhj">~ (1 ตัวอักษร)<br>Shift - v ~ (1 บรรทัด)</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เลื่อนข้อความในบรรทัดไปขวา 1 tab</td>	<td class="tg-oa6q">M-l</td>	<td class="tg-gmhj">>></td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เลื่อนข้อความในบรรทัดไปซ้าย 1 tab</td>	<td class="tg-oa6q">-</td>	<td class="tg-gmhj"><<</td>
-	</tr>
-</table>
-	<br>Opening and Exiting
-<table class="tg">
-	<tr>
-		<th class="tg-5rrb"></th>	<th class="tg-rgvv">Emacs</th>	<th class="tg-sc15">Vim</th>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เปิดไฟล์ที่ต้องการแก้ไข</td><td class="tg-oa6q">C-x C-f</td>	<td class="tg-gmhj">:e [file_name]</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เซฟไฟล์ที่แก้ไขปัจจุบัน</td><td class="tg-oa6q">C-x C-s</td>	<td class="tg-gmhj">:w</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เซฟและปิดไฟล์ที่แก้ไขปัจจุบัน</td><td class="tg-oa6q">C-x C-c y</td>	<td class="tg-gmhj">:wq or :x or ZZ</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ปิดไฟล์โดยไม่เซฟการแก้ไข</td><td class="tg-oa6q">C-x C-c !</td>	<td class="tg-gmhj">:q! or ZQ</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ปิดโปรแกรม</td><td class="tg-oa6q">C-x C-c</td>	<td class="tg-gmhj">:q</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">แบ่งจอแนวนอน</td><td class="tg-oa6q">C-x 2</td>	<td class="tg-gmhj">:sp [filename] or <br>:split [filename] or <br>Ctrl - w, S</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">แบ่งจอแนวตั้ง</td><td class="tg-oa6q">C-x 3</td>	<td class="tg-gmhj">:vsplit [filename] or <br>:vs [filename] or <br>:vsp [filename] or <br>Ctrl - w, v</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ไปหน้าต่างถัดไป</td><td class="tg-oa6q">C-x o</td>	<td class="tg-gmhj">Ctrl - w <br>movement(hjkl) or<br>Ctrl - w Ctrl -</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ปิดหน้าต่าง split ปัจจุบัน</td><td class="tg-oa6q">C-x 0</td>	<td class="tg-gmhj">:hide</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ปิดหน้าต่าง split ทั้งหมด ยกเว้นปัจจุบัน</td><td class="tg-oa6q">C-x 1</td>	<td class="tg-gmhj">:only</td>
-	</tr>
-</table>
-<br>Searching and Replacing
-<table class="tg">
-	<tr>
-		<th class="tg-5rrb"></th>	<th class="tg-rgvv">Emacs</th>	<th class="tg-sc15">Vim</th>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ค้นหาคำต่อจาก cursor</td>	<td class="tg-oa6q">C-s คำที่ต้องการ</td>	<td class="tg-gmhj">/คำที่ต้องการ</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ค้นหาคำก่อนหน้า cursor</td> <td class="tg-oa6q">C-x คำที่ต้องการ</td>	<td class="tg-gmhj">?คำที่ต้องการ</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">ทำซ้ำการค้นหาก่อนหน้าในทิศทางเดิม</td> <td class="tg-oa6q">C-s</td>	<td class="tg-gmhj">n</td>
-	</tr><tr>
-		<td class="tg-75rn">ทำซ้ำการค้นหาก่อนหน้าในทิศทางตรงข้าม</td> <td class="tg-oa6q">C-r</td>	<td class="tg-gmhj">N</td>
-	</tr><tr>
-		<td class="tg-75rn">แทนที่คำว่า old ด้วยคำว่า new<br>ทั้งหมดในไฟล์</td> <td class="tg-oa6q">M-%  (‘!’ to replace al</td>	<td class="tg-gmhj">:%s/old/new/g</td>
-	</tr><tr>
-		<td class="tg-75rn">แทนที่คำว่า old ด้วยคำว่า new<br>ทั้งหมดในไฟล์ พร้อมกดยืนยันการแทนที่</td> <td class="tg-oa6q">M-% <br>(‘space’ to replace, ‘n’ to skip)</td>	<td class="tg-gmhj">:%s/old/new/gc</td>
-	</tr><tr>
-		<td class="tg-75rn">ค้นหาคำว่า text และลบบรรทัดที่มีคำนี้อยู่</td> <td class="tg-oa6q">-</td>	<td class="tg-gmhj">:g/text/d</td>
-	</tr>
-</table>
-<br>Sorting
-<table class="tg">
-	<tr>
-		<th class="tg-5rrb"></th>	<th class="tg-rgvv">Emacs</th>	<th class="tg-sc15">Vim</th>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เรียงตามตัวอักษร</td> <td class="tg-oa6q">M-x sort-line</td>	<td class="tg-gmhj">:sort</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เรียงตามตัวเลข</td> <td class="tg-oa6q">M-x sort-numeric-fields</td>	<td class="tg-gmhj">:sort n</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เรียงตามตัวอักษรแบบย้อนกลับ</td> <td class="tg-oa6q">M-x reverse-region<br>(ต้อง sort ปกติก่อน)</td>	<td class="tg-gmhj">:sort!</td>
-	</tr>
-	<tr>
-		<td class="tg-75rn">เรียงตามตัวอักษรและลบบรรทัดที่ซ้ำ</td> <td class="tg-oa6q">-</td>	<td class="tg-gmhj">:sort u</td>
-	</tr>
-</table>
+  <ul><ul><br><div id="box-grey">การใช้งานที่ทั้งสอง editor ทำได้เหมือนกัน</div></ul></ul>
+  	<ul><ul><ul><ul><table class="tg">
+			<br><td><h2>มาเรียนรู้ความหมายของปุ่มใน emacs กันก่อน!</h2>
+				<ul><br>Modifier keys เป็นปุ่มที่จะต้องใช้ร่วมกับปุ่มอีก ได้แก่ Alt, Ctrl และ Shift รวมไปถึง<br>
+					Meta, Super และ Hyper ในการใช้ emacs ปุ่มที่เราจะสนใจหลัก ๆ คือ Ctrl และ Meta<br>
+					ในการใช้ปุ่ม Ctrl จำเป็นจะต้องกดค้างไว้ (holding) และกดปุ่มอื่นที่ต้องการ<br>
+					แต่ในการใช้ปุ่ม Meta นั้น ไม่จำเป็นที่จะต้องกดปุ่ม Meta ค้างไว้ สามารถละมือไปกดปุ่มอื่นได้เลย<br>
+					(ปุ่ม Meta ในที่นี่จะหมายถึง ESC หรือ Alt)
+						<ul><li>C หมายถึง ปุ่ม Ctrl</li></ul>
+						<ul><li>M หมายถึง Meta key ซึ่งหมายถึง Alt หรือ ESC</li></ul></ul></td>
+		</table></ul></ul></ul></ul>
 
-	<br>Emacs มากความสามารถ vim มากความคล่องตัว
-	<ul><p>ถ้าหากมีใครที่ชื่นชอบในความสามารถของ emacs ไม่ว่าจะเป็นการที่สามารถเปิดเว็บไซต์<br>
-			การเล่น Tetris รวมไปถึงการ integration ได้ภายในตัวโปรแกรมของ emacs เอง<br>
-			แต่ว่ากลับถูกใจในความคล่องตัวของคีย์ลัดในการทำงานกับ text ของ vim ทำให้ EVIL ถือกำเนิดขึ้น</p></ul>
-	<br>EVIL (Extensible VI Layer for Emacs)
-	<ul><p>ซึ่งเมื่อติดตั้ง Evil แล้วการใช้งาน emacs จะสามารถใช้งานคีย์ลัดได้ทั้งของ emacs และ vim<br>
-			หมายเหตุ: อ่านเพิ่มเติมได้ที่ <a href="https://www.emacswiki.org/emacs/Evil">EmacsWiki</a></p></ul>
-	<br>ศึกษาเพิ่มเติม
-	<ul><p>อย่างไรก็ตาม ไม่ว่าคุณจะใช้ emacs หรือ vim คุณจำเป็นที่จะต้องฝึกฝนการใช้งานใน editor นั้น ๆ<br>
-			จนมันทำงานตอบสนองความต้องการของคุณได้อย่างเหมาะสมและมีความชำนาญในการใช้งาน editor<br>
-			อย่างมีประสิทธิภาพ เราจึงขอแนะนำแหล่งข้อมูลดี ๆ ที่จะช่วยให้คุณได้ฝึกฝนเพิ่มเติมดังนี้
-			<ul><li><p><a href="http://vim.wikia.com/wiki/Best_Vim_Tips">Best Vim Tips</a></p></li>
-					<li><p><a href="https://www.emacswiki.org/emacs/EmacsNiftyTricks">EmacsNiftyTricks</a></p></li>
-					<li><p><a href="http://www.gnu.org/software/emacs/tour/">A Guided Tour of Emacs</a></p></li>
-			</ul>
+		<ul><ul><table class="tg">
+			<br><td><h2>สำหรับผู้ใช้ Mac</h2>
+				<ul><br>ใน Mac ซึ่งไม่มีปุ่ม Alt ให้ใช้งานจึงต้องใช้งานปุ่ม ESC แต่หากต้องการใช้ปุ่ม option แทน ก็สามารถทำได้ โดยเข้าไปตั้งค่าตามนี้
+					<ul>Terminal > Preferences > Settings > *Whatever profile you use* > Keyboard</ul>
+      	และติ้กในช่อง
+					<ul><li>"Use option as meta key"</li></ul></td>
+		</table></ul></ul></ul>
+
+		<ul><ul><ul><table class="tg">
+			<br><ul><ul><td><h2>Modes การใช้งาน ของ vim</h2>
+				<ul><br>Modes ใน vim เป็นการแบ่งการทำงานผ่าน keyboard เป็นหลาย ๆ โหมดด้วยกัน<br>โดยแบ่งออกเป็นโหมดต่าง ๆ ดังนี้
+					(ในที่นี่ขอไม่กล่าวถึงอีก 3 โหมดได้แก่ select, command-line และ ex-mode)</ul>
+				<ul>1. Normal
+					<ul>1.1 การที่เข้าโหมด normal ให้กดปุ่ม ESC<br>
+					  	1.2 ใช้ในการนำทางและการจัดการข้อความ (text)<br>
+					  	1.3 การกดตัวอักษรบนแป้มพิมพ์จะเป็นการใช้คีย์ลัดในการทำงาน</ul></ul>
+				<ul>2. Insert
+					<ul>2.1 กด i เพื่อเข้าสู่โหมด insert<br>
+					  	2.2 การกดตัวอักษรบนแป้มพิมพ์จะเป็นการเพิ่มตัวอักษรตัวนั้นลงไปในไฟล์<br>
+					  	2.3 การจะใช้คีย์ลัดไม่สามารถใช้ได้ตรง ๆ จะต้องใช้ Ctrl หรือ Alt เป็นต้น<br>
+					  	2.4 โดยปกติ emacs และ text editor อื่น ๆ จะอยู่ในโหมด insert เป็นหลัก</ul></ul>
+				<ul>3. Visual
+					<ul>3.1 กด v เพื่อเข้าสู่โหมด visual<br>
+				    	3.2 ใช้ในการเลือกขอบเขตของ text ที่เราต้องการ (ภาษาตลาดเรียกว่า คลุมดำ)<br>
+					  	3.3 หลังจากเลือก (selection) ได้ตามที่ต้องการแล้วใช้คีย์ลัดได้แบบใน normal mode โดยไม่ต้องกด ESC</ul></ul>
+				<ul><br><li>โดยเริ่มต้นแล้ว vim จะเข้าอยู่ใน normal mode ให้</li></ul></td>
+			</table></ul></ul></ul></ul></ul>
+
+	<br><ul><div id="box-grey">Emacs & Vim Cheat Table</div></ul>
+  	<ul><table class="tg"><td>* หมายเหตุ: ผู้ใช้งาน Vim จะต้องอยู่ใน normal mode</td></table></ul>
+
+		<ul>
+
+  	<br><ul><ul><ul><ul><ul><ul><ul><ul><h2 style="color: navy">Basic Movement</h2></ul></ul></ul></ul></ul></ul></ul></ul>
+		<ul><ul><ul><ul><ul><table class="tg">
+			<tr><th bgcolor=#CFCFCF>Topics</th>	<th bgcolor=#63B8FF>Emacs</th>	<th bgcolor=#9ACD32>Vim</th></tr>
+			<tr><td>เลื่อนซ้าย</td>	<td>C-b</td>	<td>h</td></tr>
+			<tr><td>เลื่อนขวา</td> <td>C-f</td>	<td>l</td></tr>
+			<tr><td>เลื่อนบน</td>	<td>C-p</td>	<td>k</td></tr>
+			<tr><td>เลื่อนล่าง</td>	<td>C-n</td>	<td>j</td></tr>
+			<tr><td>เลื่อนขวา 1 คำ</td>	<td>M-f</td>	<td>w</td></tr>
+			<tr><td>เลื่อนซ้าย 1 คำ</td>	<td>M-b</td>	<td>b</td></tr>
+			<tr><td>ไปที่อักษรตัวแรกของคำถัดไป</td>	<td>M-f or M-right</td>	<td>w</td></tr>
+			<tr><td>ไปที่อักษรตัวสุดท้ายของคำถัดไป</td>	<td>-</td>	<td>e</td></tr>
+			<tr><td>ไปที่อักษรตัวตัวแรกของคำก่อนหน้า</td>	<td>M-b or M-left</td>	<td>b</td></tr>
+			<tr><td>ไปที่อักษรตัวตัวแรกของคำก่อนหน้า</td>	<td>C-a</td>	<td>^</td></tr>
+			<tr><td>ไปที่อักษรตัวสุดท้ายของแถว</td>	<td>C-e</td>	<td>$</td></tr>
+			<tr><td>ไปที่อักษรตัวแรกของไฟล์</td>	<td>M-<</td>	<td>gg</td></tr>
+			<tr><td>ไปที่อักษรตัวแรกของไฟล์</td>	<td>M-></td>	<td>G</td></tr>
+		</table></ul></ul></ul></ul></ul>
+
+		<br><ul><ul><ul><ul><ul><ul><ul><ul><ul><h2 style="color: navy">Marking Text</h2></ul></ul></ul></ul></ul></ul></ul></ul></ul>
+		<ul><ul><ul><ul><ul><table class="tg">
+			<tr><th bgcolor=#CFCFCF>Topics</th>	<th bgcolor=#63B8FF>Emacs</th>	<th bgcolor=#9ACD32>Vim</th></tr>
+			<tr><td>Mark ตัวอักษร (highlight)</td>	<td>C-space bar (เริ่ม mark)</td>	<td>v (เริ่ม mark)</td></tr>
+			<tr><td>Block mark</td>	<td>-</td>	<td>Ctrl - v</td></tr>
+			<tr><td>Line mark</td>	<td>-</td>	<td>Shift - v</td></tr>
+		</table></ul></ul></ul></ul></ul>
+
+		<br><ul><ul><ul><ul><ul><ul><ul><ul><ul><br><h2 style="color: navy">Editing Text</h2></ul></ul></ul></ul></ul></ul></ul></ul></ul>
+		<ul><ul><ul><ul><table class="tg">
+			<tr><th bgcolor=#CFCFCF>Topics</th>	<th bgcolor=#63B8FF>Emacs</th>	<th bgcolor=#9ACD32>Vim</th></tr>
+			<tr><td>คัดลอก</td>	<td>M-w</td>	<td>y</td></tr>
+			<tr><td>cut</td>	<td>C-w</td>	<td>d</td></tr>
+			<tr><td>วาง</td>	<td>C-y</td>	<td>p</td></tr>
+			<tr><td>ลบทั้งแถว</td>	<td>C-k</td>	<td>dd</td></tr>
+			<tr><td>ลบตัวอักษร (char)</td>	<td>C-d</td>	<td>x</td></tr>
+			<tr><td>ลบคำ (word)</td>	<td>M-d</td>	<td>dw</td></tr>
+			<tr><td>Delete backwards</td>	<td>M-del</td>	<td>db</td></tr>
+			<tr><td>Undo</td>	<td>C-x u or C-_ or C-/</td>	<td>u</td></tr>
+			<tr><td>เปลี่ยนตัวอักษรพิมพ์เล็กเป็นพิมพ์ใหญ่</td>	<td>M-u (1 word)</td>	<td>~ (1 ตัวอักษร)<br>Shift - v ~ (1 บรรทัด</td></tr>
+			<tr><td>เปลี่ยนตัวอักษรพิมพ์ใหญ่เป็นพิมพ์เล็ก</td>	<td>M-l (1 word)</td>	<td>~ (1 ตัวอักษร)<br>Shift - v ~ (1 บรรทัด)</td></tr>
+			<tr><td>เลื่อนข้อความในบรรทัดไปขวา 1 tab</td>	<td>M-l</td>	<td>>></td></tr>
+			<tr><td>เลื่อนข้อความในบรรทัดไปซ้าย 1 tab</td>	<td>-</td>	<td><<</td></tr>
+		</table></ul></ul></ul></ul>
+
+		<ul><ul><ul><ul><ul><ul><ul><br><h2 style="color: navy">Opening and Exiting</h2></ul></ul></ul></ul></ul></ul></ul>
+		<ul><ul><ul><ul><table class="tg">
+			<tr><th bgcolor=#CFCFCF>Topics</th>	<th bgcolor=#63B8FF>Emacs</th>	<th bgcolor=#9ACD32>Vim</th></tr>
+			<tr><td>เปิดไฟล์ที่ต้องการแก้ไข</td><td>C-x C-f</td>	<td>:e [file_name]</td></tr>
+			<tr><td>เซฟไฟล์ที่แก้ไขปัจจุบัน</td><td>C-x C-s</td>	<td>:w</td></tr>
+			<tr><td>เซฟและปิดไฟล์ที่แก้ไขปัจจุบัน</td><td>C-x C-c y</td>	<td>:wq or :x or ZZ</td></tr>
+			<tr><td>ปิดไฟล์โดยไม่เซฟการแก้ไข</td><td>C-x C-c !</td>	<td>:q! or ZQ</td></tr>
+			<tr><td>ปิดโปรแกรม</td><td>C-x C-c</td>	<td>:q</td></tr>
+			<tr><td>แบ่งจอแนวนอน</td><td>C-x 2</td>	<td>:sp [filename] or <br>:split [filename] or <br>Ctrl - w, S</td></tr>
+			<tr><td>แบ่งจอแนวตั้ง</td><td>C-x 3</td>	<td>:vsplit [filename] or <br>:vs [filename] or <br>:vsp [filename] or <br>Ctrl - w, v</td></tr>
+			<tr><td>ไปหน้าต่างถัดไป</td><td>C-x o</td>	<td>Ctrl - w <br>movement(hjkl) or<br>Ctrl - w Ctrl -</td></tr>
+			<tr><td>ปิดหน้าต่าง split ปัจจุบัน</td><td>C-x 0</td>	<td>:hide</td></tr>
+			<tr><td>ปิดหน้าต่าง split ทั้งหมด ยกเว้นปัจจุบัน</td><td>C-x 1</td>	<td>:only</td></tr>
+		</table></ul></ul></ul></ul>
+
+		<ul><ul><ul><ul><ul><ul><br><h2 style="color: navy">Searching and Replacing</h2></ul></ul></ul></ul></ul></ul>
+		<ul><ul><ul><table class="tg">
+			<tr><th bgcolor=#CFCFCF>Topics</th>	<th bgcolor=#63B8FF>Emacs</th>	<th bgcolor=#9ACD32>Vim</th></tr></tr>
+			<tr><td>ค้นหาคำต่อจาก cursor</td>	<td>C-s คำที่ต้องการ</td>	<td>/คำที่ต้องการ</td></tr>
+			<tr><td>ค้นหาคำก่อนหน้า cursor</td> <td>C-x คำที่ต้องการ</td>	<td>?คำที่ต้องการ</td></tr>
+			<tr><td>ทำซ้ำการค้นหาก่อนหน้าในทิศทางเดิม</td> <td>C-s</td>	<td>n</td></tr>
+			<tr><td>ทำซ้ำการค้นหาก่อนหน้าในทิศทางตรงข้าม</td> <td class="tg-oa6q">C-r</td>	<td>N</td></tr>
+			<tr><td>แทนที่คำว่า old ด้วยคำว่า new<br>ทั้งหมดในไฟล์</td> <td class="tg-oa6q">M-%  (‘!’ to replace al</td>	<td>:%s/old/new/g</td></tr>
+			<tr><td>แทนที่คำว่า old ด้วยคำว่า new<br>ทั้งหมดในไฟล์ พร้อมกดยืนยันการแทนที่</td> <td>M-% <br>(‘space’ to replace, ‘n’ to skip)</td>	<td>:%s/old/new/gc</td></tr>
+			<tr><td>ค้นหาคำว่า text และลบบรรทัดที่มีคำนี้อยู่</td> <td>-</td>	<td>:g/text/d</td></tr>
+		</table></ul></ul></ul>
+
+		<ul><ul><ul><ul><ul><ul><ul><ul><ul><br><h2 style="color: navy">Sorting</h2></ul></ul></ul></ul></ul></ul></ul></ul></ul>
+		<ul><ul><ul><ul><table class="tg">
+			<tr><th bgcolor=#CFCFCF>Topics</th>	<th bgcolor=#63B8FF>Emacs</th>	<th bgcolor=#9ACD32>Vim</th></tr></tr>
+			<tr><td>เรียงตามตัวอักษร</td> <td>M-x sort-line</td>	<td>:sort</td></tr>
+			<tr><td>เรียงตามตัวเลข</td> <td>M-x sort-numeric-fields</td>	<td>:sort n</td></tr>
+			<tr><td>เรียงตามตัวอักษรแบบย้อนกลับ</td> <td>M-x reverse-region<br>(ต้อง sort ปกติก่อน)</td>	<td>:sort!</td></tr>
+			<tr><td>เรียงตามตัวอักษรและลบบรรทัดที่ซ้ำ</td> <td>-</td>	<td>:sort u</td></tr>
+		</table></ul></ul></ul></ul>
+
+	<br><div id="box-grey">เพิ่มเติม</div>
+  	<ul><ul><br><h2 style="color: navy">Emacs มากความสามารถ vim มากความคล่องตัว</h2>
+		<ul>ถ้าหากมีใครที่ชื่นชอบในความสามารถของ emacs ไม่ว่าจะเป็นการที่สามารถเปิดเว็บไซต์<br>
+				การเล่น Tetris รวมไปถึงการ integration ได้ภายในตัวโปรแกรมของ emacs เอง<br>
+				แต่ว่ากลับถูกใจในความคล่องตัวของคีย์ลัดในการทำงานกับ text ของ vim ทำให้ EVIL ถือกำเนิดขึ้น</ul>
+
+  	<br><h2 style="color: navy">EVIL (Extensible VI Layer for Emacs)</h2>
+		<ul>ซึ่งเมื่อติดตั้ง Evil แล้วการใช้งาน emacs จะสามารถใช้งานคีย์ลัดได้ทั้งของ emacs และ vim<br>
+				หมายเหตุ: อ่านเพิ่มเติมได้ที่ <a href="https://www.emacswiki.org/emacs/Evil">EmacsWiki</a></ul>
+
+  	<br><h2 style="color: navy">ศึกษาเพิ่มเติม</h2>
+		<ul>อย่างไรก็ตาม ไม่ว่าคุณจะใช้ emacs หรือ vim คุณจำเป็นที่จะต้องฝึกฝนการใช้งานใน editor นั้น ๆ<br>
+				จนมันทำงานตอบสนองความต้องการของคุณได้อย่างเหมาะสมและมีความชำนาญในการใช้งาน editor<br>
+				อย่างมีประสิทธิภาพ เราจึงขอแนะนำแหล่งข้อมูลดี ๆ ที่จะช่วยให้คุณได้ฝึกฝนเพิ่มเติมดังนี้
+				<ul><li><a href="http://vim.wikia.com/wiki/Best_Vim_Tips">Best Vim Tips</a></li>
+						<li><a href="https://www.emacswiki.org/emacs/EmacsNiftyTricks">EmacsNiftyTricks</a></li>
+						<li><a href="http://www.gnu.org/software/emacs/tour/">A Guided Tour of Emacs</a></li></ul></ul></ul></ul>
+
 	</ul>
 
-
 	</div>
+
 	<hr class="part-down" />
 	<div id="footer">Copyright &copy; 2016 CPE 23 | CMU <div id="timer"></div></div>
 	</div>
